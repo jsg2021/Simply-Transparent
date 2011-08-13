@@ -1,0 +1,39 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=..\..\SimplyTransparent.chm
+Contents file=Table of Contents.hhc
+Default Font=Tahoma,8,0
+Default Window=Main
+Default topic=Welcome.htm
+Display compile progress=No
+Enhanced decompilation=Yes
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=Simply Transparent
+
+[WINDOWS]
+Main="Simply Transparent 7 Help","Table of Contents.hhc","Index.hhk","Welcome.htm","Welcome.htm","FAQ.htm","FAQ","Readme.htm","Readme",0x2520,185,0xc3046,[1,1,806,481],0x908b0000,,,,,,0
+
+
+[FILES]
+Version History.htm
+Advanced Icon Hiding Options.htm
+Checking for Updates.htm
+Contact Information.htm
+FAQ.htm
+Introduction.htm
+Known Issues.htm
+Lock Method.htm
+Options.htm
+Readme.htm
+Set Text Color Window.htm
+The Menu.htm
+Troubleshooting.htm
+About Box.htm
+Welcome.htm
+Requirements.htm
+
+[INFOTYPES]
+

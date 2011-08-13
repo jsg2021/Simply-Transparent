@@ -1,0 +1,6 @@
+; tool_x86.def : Declares the module parameters for the DLL.
+
+LIBRARY      "tool_x86"
+
+EXPORTS
+Update

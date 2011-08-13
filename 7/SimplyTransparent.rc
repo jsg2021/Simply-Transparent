@@ -1,0 +1,506 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SIMPLYTRANSPARENT   ICON                    "res\\SimplyTransparent.ico"
+ID_TRAY                 ICON                    "res\\Tray.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_SIMPLYTRANSPARENT MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+ID_TRAY MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "By Jonathan Grimes",          ID_FILE_BYJONATHANGRIMES
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&About Simply Transparent...", IDM_ABOUT
+        MENUITEM "&Help",                       ID_HELP
+        MENUITEM "Check for &Updates...",       ID_UPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "&Set Text Color...",          ID_SET_TEXT_COLOR
+        MENUITEM "&Options...",                 ID_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "S&how Splash with Simply Transparent Startup", 
+                                                ID_SHOWSPLASH, CHECKED
+        MENUITEM "Start with &Windows",         ID_STARTUP, CHECKED
+        MENUITEM "&Beginner Mode (Asks more Questions)", ID_BEGINNERMODE
+        , CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 372, 226
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "About Simply Transparent"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,315,204,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT | SS_SUNKEN,7,7,96,
+                    171
+    EDITTEXT        IDC_EDIT1,117,30,245,93,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    ICON            IDI_SIMPLYTRANSPARENT,IDC_STATIC,1,204,20,20,
+                    SS_REALSIZEIMAGE
+    GROUPBOX        "",IDC_STATIC,110,7,255,193
+    LTEXT           "By Jonathan Grimes",IDC_STATIC,26,210,64,8
+    LTEXT           "Simply Transparent version 7.2",IDC_STATIC,117,18,245,8
+    CONTROL         ID_TRAY,IDC_PAY,"Static",SS_BITMAP,321,172,41,19
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,138,166,190,1
+    LTEXT           "Static",IDC_PAYPAL_DONTATE,119,171,185,24
+    LTEXT           "Home page_____________",IDC_VISITME,263,147,99,9,NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,138,125,190,1
+    LTEXT           "Contact________________",IDC_CONTACTME,263,132,99,9,NOT 
+                    WS_VISIBLE,WS_EX_TRANSPARENT
+    LTEXT           "Product Home___________",IDC_PRODUCTHOME,138,132,99,8,
+                    NOT WS_VISIBLE
+    LTEXT           "Help____________________",IDC_HELPME,138,147,99,8,NOT 
+                    WS_VISIBLE
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE,8,8,96,170
+END
+
+IDD_BUTTON DIALOG  1, 1, 13, 11
+STYLE DS_SETFONT | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_HI_ADVANCED DIALOG  0, 0, 301, 159
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | 
+    DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Advanced"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,138,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,244,138,50,14
+    CONTROL         "Enable button",IDC_SHOWBUTTON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,23,59,60,10
+    CONTROL         "Slider1",IDC_RESPONSIVE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,55,97,187,15
+    GROUPBOX        "Advanced",IDC_STATIC,7,7,287,125
+    RTEXT           "More",IDC_STATIC,27,100,28,8
+    GROUPBOX        "Hind/Show Responsiveness",IDC_STATIC,12,84,273,40
+    LTEXT           "Less",IDC_STATIC,243,100,28,8
+    GROUPBOX        "Automatic Options",IDC_STATIC,12,41,273,39
+    ICON            IDI_SIMPLYTRANSPARENT,IDC_STATIC,12,18,21,20
+    LTEXT           "More options for hidding your icons...",IDC_STATIC,37,
+                    19,247,20
+END
+
+IDD_MESSAGE DIALOGEX 0, 0, 135, 47
+STYLE DS_ABSALIGN | DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | 
+    DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    ICON            IDI_SIMPLYTRANSPARENT,IDC_IMAGE,7,7,21,20
+    PUSHBUTTON      "&OK",IDOK,33,18,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "&Yes",IDYES,35,18,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "&No",IDNO,35,18,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "&Cancel",IDCANCEL,35,18,50,14,NOT WS_VISIBLE
+END
+
+IDD_METHOD DIALOGEX 0, 0, 247, 146
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | 
+    DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Simply Transparent"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,190,125,50,14
+    DEFPUSHBUTTON   "OK",IDOK,136,125,50,14
+    CONTROL         "Method 1: Brute Force",IDC_METHOD,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFT | BS_TOP | BS_MULTILINE | 
+                    WS_DISABLED | WS_GROUP | WS_TABSTOP,24,50,207,10
+    CONTROL         "Method 2: Advanced",IDC_METHOD2,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFT | BS_TOP | BS_MULTILINE | 
+                    WS_DISABLED,24,62,207,10
+    GROUPBOX        "Transparency Lock Method:",IDC_STATIC,7,7,233,72
+    LTEXT           "Simply Transparent can execute two methods that lock your options in place.  Here is where you decide which one you prefer. (First one is more compatible and the second is more efficient)",
+                    IDC_STATIC,14,18,217,26
+    EDITTEXT        IDC_TIMEOUT,24,96,40,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "User Defined Timeout interval",IDC_STATIC,7,81,233,35
+    LTEXT           "If you would like to check settings more or less often then change this value. (It is in milliseconds)",
+                    IDC_STATIC,68,93,165,17
+    ICON            IDI_SIMPLYTRANSPARENT,IDC_STATIC,7,119,20,20
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 327, 242
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | 
+    DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Simply Transparent Settings"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,270,222,50,14
+    PUSHBUTTON      "OK",IDOK,216,222,50,14
+    CONTROL         "Enable icon hiding",IDC_ICON_HIDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,45,71,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Automatically: Based on mouse movement",
+                    IDC_ICON_HIDE_METHOD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP | WS_TABSTOP,18,70,153,10
+    CONTROL         "Manual: You hide and show the icons",
+                    IDC_ICON_HIDE_METHOD2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,18,83,137,10
+    PUSHBUTTON      "Advanced",ID_ICONHIDE_ADVANCE,261,54,50,14,WS_DISABLED
+    CONTROL         "Enable hot tracking",IDC_HOT_TRACKING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,101,74,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Hover selection",IDC_TRACKMETHOD,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP | WS_TABSTOP,
+                    18,124,66,10
+    CONTROL         "Hover selection + underline lables on hover",
+                    IDC_TRACKMETHOD2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,18,137,155,10
+    CONTROL         "Hover selection + always underline lables",
+                    IDC_TRACKMETHOD3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,18,150,152,10
+    EDITTEXT        IDC_HOVER_TIME,282,140,28,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED | NOT WS_BORDER,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    CONTROL         "Enable Strict Active-Desktop Checking",ID_ADPOLL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,183,142,10
+    PUSHBUTTON      "Advanced",IDC_LOCKMETHOD,265,199,51,14
+    LTEXT           "Icons disappear/reappear when:",-1,15,58,108,8
+    LTEXT           "Method of 'hot tracking':",-1,17,113,80,8
+    LTEXT           "The amount of time (in milliseconds) that the mouse cursor must hover over an item before it is selected:",
+                    -1,186,111,126,28
+    GROUPBOX        "",-1,7,7,313,161
+    GROUPBOX        "",-1,11,101,305,63
+    ICON            IDI_SIMPLYTRANSPARENT,-1,12,16,21,20
+    GROUPBOX        "",-1,11,45,305,52
+    LTEXT           "Simply Transparent options:",-1,35,17,96,21
+    GROUPBOX        "Miscellaneous Options",-1,7,172,169,46
+    LTEXT           "By Jonathan Grimes",-1,7,228,67,8,WS_DISABLED
+    GROUPBOX        "Transparency Lock Method",-1,179,172,141,46
+    LTEXT           "Currently using: X method",IDC_METHODMESSAGE,191,187,
+                    122,8
+    CONTROL         "",-1,"Static",SS_ETCHEDVERT,177,110,1,50
+    CONTROL         "Enable Logging",IDC_LOGGING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,194,65,10
+    CONTROL         "Show icon in system tray",IDC_SHOWICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,205,155,10
+    PUSHBUTTON      "Text Color",IDC_TEXTCOLOR,261,23,50,14
+END
+
+IDD_SPLASH DIALOG  0, 0, 254, 296
+STYLE DS_ABSALIGN | DS_SYSMODAL | DS_SETFONT | DS_SETFOREGROUND | DS_CENTER | 
+    WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         131,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,
+                    253,295
+END
+
+IDD_TRAYICON_AWARENESS DIALOG  0, 0, 219, 135
+STYLE DS_ABSALIGN | DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | 
+    DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Simply Transparent Tray Icon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,77,112,64,16
+    LTEXT           "Static",IDC_TRAYMESSAGE,7,7,205,44
+    CONTROL         140,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,56,55,106,
+                    50
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,21
+ PRODUCTVERSION 7,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Simply Transparent Desktop Enhancement"
+            VALUE "CompanyName", "JonathanGrimes"
+            VALUE "FileDescription", "Simply Transparent Desktop Enhancement"
+            VALUE "FileVersion", "1, 0, 0, 21"
+            VALUE "InternalName", "Simply Transparent"
+            VALUE "LegalCopyright", "Copyright ©2002"
+            VALUE "LegalTrademarks", "Simply Transparent© 2002 Jonthan Grimes  GJ Logo®© Jonathan Grimes 2002"
+            VALUE "OriginalFilename", "SimplyTransparent.exe"
+            VALUE "PrivateBuild", "200"
+            VALUE "ProductName", "Simply Transparent"
+            VALUE "ProductVersion", "7, 1, 0, 0"
+            VALUE "SpecialBuild", "0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BUTTON              BITMAP                  "res\\bmp00002.bmp"
+IDB_PAYPAL              BITMAP                  "res\\donate.bmp"
+IDB_SPLASH              BITMAP                  "res\\splash-1.bmp"
+IDB_ABOUT               BITMAP                  "res\\Graphic2.bmp"
+IDB_TRAY                BITMAP                  "res\\2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        VERTGUIDE, 87
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+        HORZGUIDE, 132
+        HORZGUIDE, 141
+        HORZGUIDE, 147
+        HORZGUIDE, 156
+        HORZGUIDE, 200
+    END
+
+    IDD_BUTTON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 6
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 4
+    END
+
+    IDD_HI_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+        HORZGUIDE, 104
+    END
+
+    IDD_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_METHOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        VERTGUIDE, 14
+        VERTGUIDE, 24
+        VERTGUIDE, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        VERTGUIDE, 18
+        VERTGUIDE, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_TRAYICON_AWARENESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUT               "Thank you for using this program.\r\nThis program is freeware, but I would appreciate your support so I may continue to create utilities like this one. To contact me please click the link below.\r\n\r\nSimply Transparent © 2002 Jonathan Grimes\r\nJonathanGrimes™ 2002 Jonathan Grimes\r\nGJ Logo™ 2002 Jonathan Grimes"
+    IDS_STARTUPW            "Turning off: Start Simply Transparent with Windows...\nAre you sure you DON'T want Simply Transparent to load at startup?"
+    IDS_APP_TITLE           "Simply Transparent"
+    IDS_REGISTRY_KEY        "JonathanGrimes"
+    IDS_NEWUSERW            "Turning off: Simply Transparent Beginner Mode...\nAre you sure you DON'T want Simply Transparent to prompt you before changes?"
+    IDS_EXITW               "Simply Transparent Closing...\nOnce Simply Transparent closes your background color and text color will be restored to the way they were colored before Simply Transparent started.  Are you sure you want to close Simply Transparent?"
+    IDS_QUITNOW             "Simply Transparent was requested to close...\nSimply Transparent is shutting down..."
+    IDS_APP_CLASS           "SimplyTransparent.exe_JonathanG"
+    IDC_SIMPLYTRANSPARENT   "Simply Transparent"
+    IDS_PAYPAL              "Please support my work, so that i may continue to give away free software"
+    IDS_WELCOME             "Welcome to Simply Transparent!\nThis is the first time you have run this program. I hope you enjoy it."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TRAY                 "Simply Transparent"
+    IDS_ERROR_ACTIVE_DESKTOP_ENABLED 
+                            "Active Desktop Detected\nSimply Transparent detected that the Active Desktop was enabled.  Simply Transparent will now close."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATE              "There is a new version SimplyTransparent availble.\nWhould you like to visit Simply Transparent's home page?"
+    IDS_ACTIVEDESKTOP_WARN  "The Active Desktop is enabled!\nSimply Transparent can not run with Active Desktop Enabled.\nPlease disable Active Desktop's ""View As Web Page"" (or ""Show Web Content"") option before starting Simply Transparent.\n\nIf your current wallpaper is not a Windows BMP image, you can convert it.  See the FAQ help file section, under the heading ""Converting my wallpaper to a Windows Bitmap (BMP)"""
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CONTACTME           "Contact me"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_VISITME             "Visit my site"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PRODUCTHOME         "SimplyTransparent's site"
+    IDC_HELPME              "Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRAY_AWARNESS       "Simply Transparent's interface and options are accessible via right-clicking the icon that is placed in the system tray while Simply Transparent is running.\nHere you can change the various settings that define Simply Transparent's behavior, such as Text Color."
+    IDS_WAITING             "Simply Transparent is waiting to run\nSimply Transparent has been waiting for the previous session to close for a while now.\nDo you want Simply Transparent to continue to wait for the previous session to close?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

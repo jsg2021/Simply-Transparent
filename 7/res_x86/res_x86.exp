@@ -1,0 +1,6 @@
+res_x86.exp: res_x86.obj res_x86.def
+    $(implib) -machine:$(CPU)     \
+   -def:res_x86.def      \
+   res_x86.obj  \
+   -out:res_x86.lib
+
