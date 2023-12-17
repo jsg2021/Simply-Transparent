@@ -1,0 +1,17 @@
+# Microsoft Developer Studio Generated Dependency File, included by res_x86.mak
+
+.\CfgFuncs.cpp : \
+	".\CfgFuncs.h"\
+	".\res_x86.h"\
+	
+
+.\res_x86.cpp : \
+	"..\getwnd.h"\
+	".\CfgFuncs.h"\
+	".\res_x86.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	

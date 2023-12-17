@@ -1,0 +1,81 @@
+# Microsoft Developer Studio Generated Dependency File, included by SimplyTransparent.mak
+
+.\_Button.cpp : \
+	".\_Button.h"\
+	".\_Splash.h"\
+	".\CfgFuncs.h"\
+	".\Options.h"\
+	".\SimplyTransparent.h"\
+	".\TransCtrl.h"\
+	".\trayicon.h"\
+	
+
+.\_Splash.cpp : \
+	".\_Splash.h"\
+	".\CfgFuncs.h"\
+	".\Options.h"\
+	".\SimplyTransparent.h"\
+	".\TransCtrl.h"\
+	".\trayicon.h"\
+	
+
+.\CfgFuncs.cpp : \
+	".\_Splash.h"\
+	".\CfgFuncs.h"\
+	".\Options.h"\
+	".\SimplyTransparent.h"\
+	".\TransCtrl.h"\
+	".\trayicon.h"\
+	
+
+.\Options.cpp : \
+	".\_Splash.h"\
+	".\CfgFuncs.h"\
+	".\Options.h"\
+	".\SimplyTransparent.h"\
+	".\TransCtrl.h"\
+	".\trayicon.h"\
+	
+
+.\SimplyTransparent.cpp : \
+	".\_Splash.h"\
+	".\CfgFuncs.h"\
+	".\Options.h"\
+	".\SimplyTransparent.h"\
+	".\TransCtrl.h"\
+	".\trayicon.h"\
+	
+
+.\SimplyTransparent.rc : \
+	".\res\arrow.ico"\
+	".\res\bmp00002.bmp"\
+	".\res\SimplyTranparentLogo.bmp"\
+	".\res\SimplyTransparent.ico"\
+	".\res\Tray.ico"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\_Splash.h"\
+	".\CfgFuncs.h"\
+	".\Options.h"\
+	".\SimplyTransparent.h"\
+	".\StdAfx.h"\
+	".\TransCtrl.h"\
+	".\trayicon.h"\
+	
+
+.\TransCtrl.cpp : \
+	".\_Button.h"\
+	".\_Splash.h"\
+	".\CfgFuncs.h"\
+	".\Options.h"\
+	".\res_x86\res_x86.h"\
+	".\SimplyTransparent.h"\
+	".\TransCtrl.h"\
+	".\trayicon.h"\
+	
+
+.\trayicon.cpp : \
+	".\trayicon.h"\
+	
