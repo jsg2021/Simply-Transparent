@@ -1,0 +1,10 @@
+# Microsoft Developer Studio Generated Dependency File, included by tool_x86.mak
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+.\tool_x86.cpp : \
+	".\StdAfx.h"\
+	".\tool_x86.h"\
+	

@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SimplyTransparent - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Jonathan\LOCALS~1\Temp\RSP13B.tmp" with contents
+[
+/nologo /G6 /ML /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SimplyTransparent.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Jonathan\My Documents\My Projects\Simply Transparent 7.0\TransCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Jonathan\LOCALS~1\Temp\RSP13B.tmp" 
+Creating temporary file "C:\DOCUME~1\Jonathan\LOCALS~1\Temp\RSP13C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib comctl32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SimplyTransparent.pdb" /machine:I386 /out:"Bin/SimplyTransparent.exe" 
+".\Release\_Button.obj"
+".\Release\_Splash.obj"
+".\Release\CfgFuncs.obj"
+".\Release\main.obj"
+".\Release\Options.obj"
+".\Release\SimplyTransparent.obj"
+".\Release\StdAfx.obj"
+".\Release\TransCtrl.obj"
+".\Release\trayicon.obj"
+".\Release\SimplyTransparent.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Jonathan\LOCALS~1\Temp\RSP13C.tmp"
+<h3>Output Window</h3>
+Compiling...
+TransCtrl.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SimplyTransparent.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

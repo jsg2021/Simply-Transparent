@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Simply Transparent 7 Installer", "Simply Transparent 7 Installer.vdproj", "{CEC71A6E-A1DD-4F38-A75F-358C36F4ACB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CEC71A6E-A1DD-4F38-A75F-358C36F4ACB8}.Debug.ActiveCfg = Debug
+		{CEC71A6E-A1DD-4F38-A75F-358C36F4ACB8}.Debug.Build.0 = Debug
+		{CEC71A6E-A1DD-4F38-A75F-358C36F4ACB8}.Release.ActiveCfg = Release
+		{CEC71A6E-A1DD-4F38-A75F-358C36F4ACB8}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+; res_x86.def : Declares the module parameters for the DLL.
+
+LIBRARY      "res_x86"
+SECTIONS	 .Res_x86App READ WRITE SHARED
+
+EXPORTS
+DeskWndProc
+StartHookThreadProc
+StopHookThreadProc
